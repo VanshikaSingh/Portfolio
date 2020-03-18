@@ -7,6 +7,7 @@ html {
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
+  padding: 0;
 }
 .pimg1,
 .pimg2,
@@ -37,6 +38,7 @@ html {
 .section-light {
   background-color: #fed7bf;
   color: #666;
+  box-shadow: 10px 10px 5px grey;
 }
 .section-dark {
   background-color: #e4afb0;
@@ -62,6 +64,30 @@ html {
 .border.trans {
   background-color: transparent;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-gap: 20px;
+}
+.skills {
+  background-color: #9a7787;
+  color: white;
+  padding: 20px;
+  border-radius: 15px 50px 30px;
+  text-shadow: 2px 2px 4px #000000;
+  box-shadow: 10px 10px 5px grey;
+}
+.skills:hover {
+  background-color: white;
+  color: #9a7787;
+}
+
+.footer {
+  width: 100%;
+  background-color: #222;
+  padding: 60px 0px;
+}
+
 @media (max-width: 568px) {
   .pimg3,
   .pimg2,
