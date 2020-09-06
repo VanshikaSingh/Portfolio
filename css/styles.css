@@ -61,14 +61,14 @@ header {
   right: 0px;
   border-bottom: 1px solid #423940;
   padding: 0px 15px;
-  z-index: 11;
+  z-index: 100;
 }
 header .fixed {
   background-color: #ffffff;
   position: fixed;
   border-color: #eeeeee;
   animation: fixHeader 0.5s ease;
-  z-index: 100;
+  z-index: 11;
 }
 @keyframes fixHeader {
   0% {
@@ -148,12 +148,18 @@ header .navbar ul li a.active::before {
 
 .home {
   min-height: 100vh;
-  background-image: url("../images/img1.jpg");
+
   background-size: cover;
   background-position: center;
   padding: 15px;
 }
-
+.home video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 .home .full-screen {
   min-height: 100vh;
 }
@@ -178,6 +184,7 @@ header .navbar ul li a.active::before {
   font-weight: 500;
   margin: 0 0;
   padding: 0;
+  position: relative;
 }
 .home .home-content .block h1 {
   color: #ffffff;
@@ -185,6 +192,7 @@ header .navbar ul li a.active::before {
   font-weight: 600;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 .home .home-content .block h3 {
   color: #ffffff;
@@ -192,9 +200,11 @@ header .navbar ul li a.active::before {
   font-weight: 500;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 .home .home-content .block .cv-btn {
   padding-top: 20px;
+  position: absolute;
 }
 .home .home-content .block .cv-btn a {
   border-radius: 4px;
@@ -940,22 +950,21 @@ footer .social a:hover {
 
 /*End Footer*/
 
-
-
-.ham-burger .fa{
+.ham-burger .fa {
   font-size: 20px;
-  display: inline-block;
+
   height: 30px;
   width: 35px;
   background-color: #ffffff;
   color: #000000;
-  border-radius: 3px;
+  border-radius: 30px;
   line-height: 30px;
   text-align: center;
   cursor: pointer;
-  display: none; 
-  border: 1px solid #eeeeee ;
+  display: none;
+  border: 1px solid #eeeeee;
 }
+
 @media (max-width: 991px) {
   .home .home-content .block h1 {
     font-size: 50px;
@@ -965,30 +974,34 @@ footer .social a:hover {
   header {
     padding: 15px;
     position: fixed;
+    background-color: #ffffff;
+    border: none;
   }
-  .ham-burger .fa{
-display: inline-block;
+  header .brand-name a {
+    color: #000000;
+  }
+  .ham-burger .fa {
+    display: inline-block;
   }
   .navbar {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
     left: 0px;
-    top: 0;
+    top: 60px;
     padding: 15px;
-    border-top:1px solid #eeeeee ;
+    border-top: 1px solid #eeeeee;
     display: none;
-  
-
-}
-header .navbar ul li{
-  display: block;
-  margin-left: 0;
-}
-header .navbar ul li a{
-  line-height: 42px;
-  color: #000000;
-}
-header .navbar ul li a::before{
-  background-color: #0099e5;
+  }
+  header .navbar ul li {
+    display: block;
+    margin-left: 0;
+  }
+  header .navbar ul li a {
+    line-height: 42px;
+    color: #000000;
+  }
+  header .navbar ul li a::before {
+    background-color: #0099e5;
+  }
 }
