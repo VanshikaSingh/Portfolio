@@ -31,7 +31,7 @@ html {
   display: inline-block;
   font-weight: 700px;
   margin: 0 0 10px;
-  color: #000000;
+  color: #596e79;
   position: relative;
   padding-bottom: 0px;
 }
@@ -39,7 +39,7 @@ html {
   content: "";
   left: 0;
   height: 2px;
-  background-color: #0099e5;
+  background-color: #596e79;
   position: absolute;
   bottom: 0px;
   right: 30%;
@@ -87,7 +87,7 @@ header .brand-name a {
   position: relative;
 }
 header .fixed .brand-name a {
-  color: #000000;
+  color: #596e79;
 }
 
 header .brand-name a::before {
@@ -135,7 +135,7 @@ header .navbar ul li a::before {
   transition: all 0.5s ease;
 }
 header .fixed .navbar ul li a::before {
-  background-color: #0099e5;
+  background-color: #9dadbe;
 }
 header .navbar ul li a:hover::before {
   width: 100%;
@@ -219,14 +219,14 @@ header .navbar ul li a.active::before {
   transition: all.5s ease;
 }
 .home .home-content .block .cv-btn a:hover {
-  background-color: #ffffff;
+  background-color: #f0ece3;
   color: #000000;
 }
 
 /*About me*/
 .about-me {
   padding: 100px 15px;
-  background-color: #ffffff;
+  background: #f0ece3;
 }
 
 .text-uppercase {
@@ -235,7 +235,7 @@ header .navbar ul li a.active::before {
 .about-me .section-title p.small {
   display: block;
   font-size: 14px;
-  color: #838383;
+  color: #1c1a16;
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -260,16 +260,16 @@ header .navbar ul li a.active::before {
   font-size: 25px;
   font-weight: 600px;
   margin: 0 0 5px;
-  color: #000000;
+  color: #9dadbe;
 }
 .about-me .about-content .text h6 {
   font-size: 18px;
   font-weight: 500;
   margin: 0 0 15px;
-  color: #000000;
+  color: #;
 }
 .about-me .about-content .text h6 span {
-  color: #0099e5;
+  color: #9dabde;
 }
 .about-me .about-content .text p {
   font-size: 15px;
@@ -318,7 +318,7 @@ header .navbar ul li a.active::before {
 .align-items-center {
   align-items: center;
 }
-.skills .img img {
+.skills .img video {
   width: 100%;
   display: block;
   height: 500px;
@@ -365,7 +365,7 @@ header .navbar ul li a.active::before {
 
 /* Start Services Section*/
 .services {
-  background-color: #f5f8fd;
+  background-color: #f0ece3;
   padding: 100px 15px 70px;
 }
 .services .section-title h1:before {
@@ -820,7 +820,7 @@ body.is-touch .tiles article .content {
 /*Contact Us*/
 .contact-us {
   padding: 100px 15px;
-  background-color: #f5f8fd;
+  background-color: #f0ece3;
 }
 .contact-us .section-title h1:before {
   left: 30%;
